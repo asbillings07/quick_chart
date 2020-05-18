@@ -1,26 +1,35 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import './App.css'
+import { AllDataChart, Tabs } from './components'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='App'>
+      <div>
+        <h1>Remittance Payor Console</h1>
+        <Tabs>
+          <div label='1w'>
+            After 'while, <em>Crocodile</em>!
+          </div>
+          <div label='2w'>
+            Nothing to see here, this tab is <em>extinct</em>!
+          </div>
+          <div label='1m'>
+            Nothing to see here, this tab is <em>extinct</em>!
+          </div>
+          <div label='2m'>
+            Nothing to see here, this tab is <em>extinct</em>!
+          </div>
+          <div label='3m'>
+            Nothing to see here, this tab is <em>extinct</em>!
+          </div>
+          <div label='All'>
+            <AllDataChart />
+          </div>
+        </Tabs>
+      </div>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
